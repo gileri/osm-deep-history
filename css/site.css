@@ -5,14 +5,14 @@
 
 #history {
     right: 0;
-    margin-left: 10em;
+    margin-left: 15em;
     overflow: auto;
 }
 
 .field {
     position: absolute;
     left: 0;
-    width: 10em;
+    width: 15em;
     padding-left: 0.5em;
 }
 
