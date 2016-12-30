@@ -23,7 +23,11 @@ function row(field, title, formatter, tag) {
     return function(selection) {
         var prev;
 
-        selection.append('th').attr('class', 'field').text(title || field);
+        selection
+            .append('th')
+            .attr('class', 'field')
+            .text(title || field)
+            .attr('title', title || field);
 
         selection
             .selectAll('td.version')
@@ -35,6 +39,9 @@ function row(field, title, formatter, tag) {
             })
             .html(function(d) {
                 return (formatter || function(x) { return x; })(tag ? d.tags[field] : d[field]);
+            })
+            .attr('title', function(d) {
+                return (tag ? d.tags[field] : d[field]);
             });
 
         function pClass(val) {
