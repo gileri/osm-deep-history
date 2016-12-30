@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/browservefy/bin/browservefy index.js:bundle.js 8080 --browserify=./node_modules/browserify/bin/cmd.js -- -d"
+    "start": "./node_modules/beefy/bin/beefy index.js:bundle.js 8080 --browserify=./node_modules/browserify/bin/cmd.js -- -d"
   },
   "repository": "git@github.com:iandees/osm-deep-history.git",
   "keywords": [
@@ -21,7 +21,7 @@
     "d3": "~3.5.4"
   },
   "devDependencies": {
-    "browserify": "2.4.3",
-    "browservefy": "0.0.10"
+    "browserify": "~13.1.1",
+    "beefy": "~2.1.8"
   }
 }
